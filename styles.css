@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, rgba(32, 35, 209, 0.719), rgba(91, 14, 180, 0.836));
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 40%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 20px 30px 20px 20px rgba(22, 22, 22, 0.26);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+
+
+.container h1 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    color: rgba(32, 35, 209, 0.719);
+}
+
+form{
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+label{
+    display: block;
+    padding: 8px;
+}
+
+input {
+    width: 90%;
+    padding: 15px 5px;
+    border: 1px solid rgba(32, 35, 209, 0.719);
+    border-radius: 5px;
+}
+
+input:focus{
+    border: 1px solid rgba(32, 35, 209, 0.719);
+    outline: 1.5px solid rgba(92, 14, 180, 0.493);
+}
+
+input[type="button"]{
+    background: linear-gradient(45deg, rgba(32, 35, 209, 0.719), rgba(91, 14, 180, 0.836));
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 20px 0px;
+    transition: 0.4s;
+}
+input[type="button"]:active{
+    transform: scale(0.95);
+}
+
+.password-paragraphs{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    padding: 15px 0px;
+}
+
+.password-paragraphs a {
+    color:rgba(32, 35, 209, 0.719) ;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.password-paragraphs a:hover{
+    text-decoration: underline;
+    color: rgba(91, 14, 180, 0.836);
+}
+
+#error-message{
+    display: none;
+    width: 80%;
+    height: auto;
+    border: 1px solid rgba(109, 4, 4, 0.945);
+    border-radius: 5px;
+    color: rgb(73, 2, 2);
+    background-color: rgba(209, 99, 99, 0.534);
+    padding: 10px;
+    margin: 5px 0px;
+
+}
+
+#success-message{
+    display: none;
+    width: 80%;
+    color:green;
+    padding: 10px;
+    margin: 5px 10px;
+    
+}
